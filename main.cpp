@@ -8,7 +8,7 @@ const std::string windowName = "window1";
 const float EPS = 1e-4;
 
 // I/O
-// 得到的都是浮点表示的图
+// 输入输出都是浮点表示的图
 
 cv::Mat getInput(const std::string& picPath);
 void outputImage(const cv::Mat& mat, const std::string& picPath);
@@ -90,7 +90,7 @@ void outputImage(const cv::Mat& mat, const std::string& picPath)
 {
 	cv::Mat tmpMat;
 	mat.convertTo(tmpMat, CV_8UC3, 255.0f);
-	imwrite(picPath, tmpMat);
+	cv::imwrite(picPath, tmpMat);
 }
 
 // 用一个二次函数来表示颜色分量变化函数
