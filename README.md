@@ -18,11 +18,13 @@ main.cpp 	// source code
 
 ## Required dll file
 
-opencv_highgui420d.dll
+The (d) means you can either use debug dll or release dll.
 
-opencv_core420d.dll
+opencv_highgui420(d).dll
 
-opencv_imgcodecs420d.dll
+opencv_core420(d).dll
+
+opencv_imgcodecs420(d).dll
 
 
 
